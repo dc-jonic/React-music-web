@@ -1,0 +1,21 @@
+{
+  "name": "react-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.45.0",
+    "vite": "^2.7.3"
+  },
+  "dependencies": {
+    "aplayer": "^1.10.1",
+    "react-router-dom": "^6.2.1"
+  }
+}

@@ -1,0 +1,67 @@
+.AllPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0 0;
+    font-size: 1rem;
+    .lineBarList{
+        display: flex;
+        .mask{
+            position: relative;
+            height: 20px;
+            width: 3px;
+            // background-color: red;
+            overflow: hidden;
+            margin-right: 2px;
+        }
+        .lineBar{
+            position: absolute;
+            left: 0;
+            width: 3px;
+            height: 20px;
+            // background:linear-gradient(to top,#d73fd0,#207be0);
+            padding-top: 0;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 3px;
+                height: 3px;
+                top: -4px;
+                // transform: translate(0,-50%);
+                background:linear-gradient(to top,#d73fd0,#207be0);
+            }
+        }
+    }
+    .titleText{
+        color: white;
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+        margin-top: 0.5rem;
+        position: relative;
+        &::after,&::before{
+            content: '';
+            position: absolute;
+            width: 65%;
+            height: 1px;
+            opacity: 0.8;
+            // background: linear-gradient(to left,#d73fd0,#207be0);
+        }
+        &::after{
+            left: 0;
+            top: -4px;
+            background: linear-gradient(to left,#d73fd0,#207be0);
+        }
+        &::before{
+            right: 0;
+            top: -6px;
+            background: linear-gradient(to right,#d73fd0,#207be0);
+        }
+    }
+    .subtitle{
+        color: white;
+        font-size: 1.8rem;
+        font-weight: bold;
+        font-family:'Times New Roman', Times, serif;
+    }
+}

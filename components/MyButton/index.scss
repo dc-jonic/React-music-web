@@ -1,0 +1,23 @@
+.btn{
+    padding: 5px 15px;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    border-radius: 3px;
+    &.btn-primary{
+        background-color: lightblue;
+        color: white;
+    }
+    &.btn-success{
+        background-color: green;
+        color: white;
+    }
+    &.btn-warn{
+        background-color: orange;
+        color: #333;
+    }
+    &.btn-danger{
+        background-color: red;
+        color: white;
+    }
+}

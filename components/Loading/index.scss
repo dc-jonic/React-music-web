@@ -1,0 +1,47 @@
+@keyframes mymove
+{
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(15deg);
+    }
+}
+
+.LoadingPage{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    .all{
+        cursor: pointer;
+    }
+    .textAll{
+        display: flex;
+        margin-top: 0.5rem;
+    }
+    .text-loading{
+        color: white;
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        font-weight: bold;
+        color: #f132c9;
+    }
+    .loadingImg{
+        // animation: mymove 1.28s infinite ease-in-out alternate ;
+        transform-origin: center;
+        
+        img{
+            width: 5rem;
+            margin-left: 20%;
+            
+        }
+    }
+}

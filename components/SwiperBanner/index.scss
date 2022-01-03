@@ -1,0 +1,77 @@
+.Allpart{
+    .bigimg{
+        position: relative;
+        z-index: -1;
+        .widthFixImg{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .allcircle{
+            position: absolute;
+            // z-index: 3;
+            top: 4.7rem;
+            width: 100%;
+            height: calc(100% - 4.7rem);
+            overflow: hidden;
+            .circle{
+                position: absolute;
+                top: 0;
+                // left: 30rem;
+                .bigcircle{
+                    // width: 15rem;
+                    // height: 15rem;
+                    border-radius: 50%;
+                    // background-color: yellowgreen;
+                    opacity: 0.5;
+                    transition: none linear 3s;
+                    transition-property: left,top,background-color;
+                }
+                .smallcircle{
+                    // width: 15rem;
+                    // height: 15rem;
+                    border-radius: 50%;
+                    // background-color: yellowgreen;
+                    opacity: 0.5;
+                    transition: none linear 3s;
+                    transition-property: left,top,background-color;
+                }
+                
+            }
+        }
+        
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            .center-img-box{
+                // position: relative;
+                .center-text-img{
+                    width: 30rem;
+                }
+                
+            }
+            
+            .text{
+                color: white;
+                font-size: 1rem;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                letter-spacing: 0.2rem;
+                text-align: center;
+                margin-top: 0.5rem;
+            }
+            .btn{
+                font-size: 0.7rem;
+                width: 8rem;
+                height: 1.6rem;
+                line-height: 1.6rem;
+                color: #f8f9fc;
+                background: linear-gradient(to right ,#d62eb2 ,#126fc6);
+                border-radius: 1rem;
+                text-align: center;
+                margin:1rem auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.allMeun{
+    width: 58.75rem;
+    // width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #dce3e6;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    position: absolute;
+    // padding: 0 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    .part-logo{
+
+    }
+    .part-meunList{
+        display: flex;
+        a{
+            text-decoration: none;
+            color: #dce3e6;
+        }
+        .meun{
+            margin-right: 2.5rem;
+            position: relative;
+            cursor: pointer;
+            &.other{
+                margin-right: 1rem;
+            }
+            &::after,&::before{
+                content: '';
+                position: absolute;
+                width: 0;
+                opacity: 0;
+            }
+            &:hover,&.active{
+                &::after,&::before{
+                    content: '';
+                    position: absolute;
+                    width: 70%;
+                    height: 0.1rem;
+                    opacity: 1;
+                    transition: opacity,width 0.38s ease-in-out;
+                }
+                &::after{
+                    bottom: -0.5rem;
+                    left: -0.3rem;
+                    background-color: #da2bb5;
+                }
+                &::before{
+                    bottom: -0.3rem;
+                    right: -0.3rem;
+                    background-color: #416088;
+                }
+            }
+            
+        }
+    }
+}

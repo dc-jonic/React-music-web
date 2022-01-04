@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom';
 import {useCallback, useEffect, useState,useLayoutEffect} from 'react'
 import Meun from './components/Meun/index.jsx';
+import Foot from './components/Foot/index.jsx';
 import Loading from './components/Loading/index.jsx';
 import MyRouter from './router/index.jsx';
 import {Link, BrowserRouter as Router} from 'react-router-dom'
@@ -35,7 +36,9 @@ function App(){
             <Meun></Meun>
             <Loading isLoading={true}></Loading>
             <MyRouter></MyRouter>
-            {/* <img src="./image/banner-img.png" alt="" /> */}
+
+            {/* 底部 */}
+            <Foot></Foot>
         </div>
     )
 

@@ -1,0 +1,85 @@
+.FootAll{
+    width: 100%;
+    height: 10rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    .container{
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        .logo-img{
+            width: 3rem;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .iconList{
+            display: flex;
+            justify-content: center;
+            margin: 0.5rem 0;
+            color: white;
+            .iconfont{
+                margin-right: 0.5rem;
+                cursor: pointer;
+                &:hover{
+                    color: #7051bc;
+                }
+            }
+        }
+        .depart{
+            text-align: center;
+        }
+        .desinger{
+            font-size: 0.5rem;
+            // color: rgb(175, 174, 174);
+            background-color:rgb(175, 174, 174) ;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 0.2rem;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(0,0,0,0);
+            cursor: pointer;
+        }
+    }
+}
+
+
+@font-face {
+    font-family: "iconfont"; /* Project id 3056564 */
+    src: url('//at.alicdn.com/t/font_3056564_ccc46qnasr.woff2?t=1641194417689') format('woff2'),
+         url('//at.alicdn.com/t/font_3056564_ccc46qnasr.woff?t=1641194417689') format('woff'),
+         url('//at.alicdn.com/t/font_3056564_ccc46qnasr.ttf?t=1641194417689') format('truetype');
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-hongbao:before {
+    content: "\e625";
+    font-size: 1.8rem;
+  }
+  
+  .icon-csdn:before {
+    content: "\e600";
+    font-size: 1.8rem;
+  }
+  
+  .icon-github-fill:before {
+    content: "\e885";
+    font-size: 1.8rem;
+  }
+  
+  .icon-QQ-circle-fill:before {
+    content: "\e887";
+    font-size: 1.8rem;
+  }
+  
+  

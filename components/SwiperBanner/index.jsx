@@ -4,7 +4,6 @@ import {useEffect,useRef} from 'react'
 function SwiperBanner(params) {
     const bigCirleRef=useRef(null)
     const smallCirleRef=useRef(null)
-    const domAear=useRef(null)
     let aearMsg={}
     let interGetheight=''
 
